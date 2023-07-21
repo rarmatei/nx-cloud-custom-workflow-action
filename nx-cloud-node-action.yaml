@@ -9,6 +9,6 @@ inputs:
     description: "Some arg 2"
     default: "default for arg2"
 
-runs:
+runtime:
   using: 'node'
   main: dist/main.js
