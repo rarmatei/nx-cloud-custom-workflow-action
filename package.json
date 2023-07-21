@@ -1,0 +1,25 @@
+{
+  "name": "nx-cloud-custom-workflow-action",
+  "version": "1.0.0",
+  "description": "",
+  "main": "node-src/main.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rarmatei/nx-cloud-custom-workflow-action.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rarmatei/nx-cloud-custom-workflow-action/issues"
+  },
+  "homepage": "https://github.com/rarmatei/nx-cloud-custom-workflow-action#readme",
+  "dependencies": {
+    "is-odd": "^3.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.2"
+  }
+}
