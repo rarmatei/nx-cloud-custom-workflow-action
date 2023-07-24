@@ -1,14 +1,6 @@
 name: "NxCloud Node Example"
 description: "Example of a node action"
 
-inputs:
-  arg-1:
-    description: "Some arg 1"
-    default: "default for arg1"
-  arg-2:
-    description: "Some arg 2"
-    default: "default for arg2"
-
 runtime:
   using: 'node'
   main: dist/main.js

@@ -8,6 +8,6 @@ console.log({result})
 
 console.log("Inputs results: ")
 console.log({
-    arg1: process.env["arg-1"],
-    arg2: process.env["arg-2"]
+    arg1: process.env["ARG_1"],
+    arg2: process.env["ARG_2"]
 })
