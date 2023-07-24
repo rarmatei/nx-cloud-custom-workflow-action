@@ -1,7 +1,7 @@
 name: "NxCloud Node Example"
 description: "Example of a node action"
 
-args:
+inputs:
   arg-1:
     description: "Some arg 1"
     default: "default for arg1"
