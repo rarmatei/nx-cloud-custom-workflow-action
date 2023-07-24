@@ -76,8 +76,8 @@ var result = (0, import_child_process.execSync)(`echo "from inside the node modu
 console.log({ result });
 console.log("Inputs results: ");
 console.log({
-  arg1: process.env["arg-1"],
-  arg2: process.env["arg-2"]
+  arg1: process.env["ARG_1"],
+  arg2: process.env["ARG_2"]
 });
 /*! Bundled license information:
 
