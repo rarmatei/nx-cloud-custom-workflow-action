@@ -1,0 +1,10 @@
+name: "NxCloud Aggregated Example"
+description: "Example of an aggregated action"
+
+definition:
+  using: 'aggregated'
+  steps:
+    - name: 'Aggregated step 1'
+      script: "echo 'inside aggregated step 1'"
+    - name: 'Aggregated step 2'
+      script: "echo 'inside aggregated step 2'"
