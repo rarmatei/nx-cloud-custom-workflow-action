@@ -7,7 +7,7 @@ description: "Example of a node action"
 runtime:
   using: 'node'
   main: dist/main.js
-  post: dist/post-run.js
+  post: dist/post.js
 
 
 #
