@@ -6,7 +6,7 @@ definition:
   steps:
     - name: 'Aggregated step 1'
       script: "echo 'inside aggregated step 1'"
-    - name: 'Example of aggregated template using another workflow step'
-      uses: "rarmatei/nx-cloud-custom-workflow-action/main@node-workflow-step-template.yaml"
+#    - name: 'Example of aggregated template using another workflow step'
+#      uses: "rarmatei/nx-cloud-custom-workflow-action/main@node-workflow-step-template.yaml"
     - name: 'Aggregated step 2'
       script: "echo \"inside aggregated step 2 >>$ARG_3<<\""
