@@ -12,4 +12,4 @@ definition:
 #        ARG_1: "arg-1 from within aggregated step"
 #        ARG_2: "arg-2 from within aggregated step"
     - name: 'Aggregated step 2'
-      script: "echo 'inside aggregated step 2 >>$ARG_3<<'"
+      script: "echo \"inside aggregated step 2 >>$ARG_3<<\""
