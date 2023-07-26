@@ -1,6 +1,16 @@
 name: "NxCloud Node Example"
 description: "Example of a node action"
 
+# ask Simon how to get PAT secret
+# JSON schema validation library? use it for clients and then use when de-serialising
+# think about naming here
 runtime:
   using: 'node'
   main: dist/main.js
+  post: dist/post-run.js
+
+
+#
+#template:
+#  using: 'composite'
+#  steps
