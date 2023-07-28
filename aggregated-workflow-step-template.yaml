@@ -7,6 +7,6 @@ definition:
     - name: 'Aggregated step 1'
       script: "echo 'inside aggregated step 1 - v3.0'"
     - name: 'Example of aggregated template using another workflow step'
-      uses: "rarmatei/nx-cloud-custom-workflow-action/main/node-workflow-step-template.yaml"
+      uses: "rarmatei/nx-cloud-custom-workflow-action/2222/node-workflow-step-template.yaml"
     - name: 'Aggregated step 2'
       script: "echo \"inside aggregated step 2 >>$ARG_3<<\""
