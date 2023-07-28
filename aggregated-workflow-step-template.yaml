@@ -1,7 +1,7 @@
 name: "NxCloud Aggregated Example"
 description: "Example of an aggregated action"
 
-runtime:
+definition:
   using: 'aggregated'
   steps:
     - name: 'Aggregated step 1'
