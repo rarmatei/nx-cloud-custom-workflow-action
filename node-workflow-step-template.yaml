@@ -1,9 +1,6 @@
 name: "NxCloud Node Example"
 description: "Example of a node action"
 
-# JSON schema validation library? use it for clients and then use when de-serialising
-# think about naming here
-#or "template"?:
 definition:
   using: 'node'
   main: dist/main.js
