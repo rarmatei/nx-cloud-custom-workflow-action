@@ -1,5 +1,5 @@
 name: "NxCloud Node Example"
-description: "Example of a node action"
+description: "Example of a node workflow step template"
 
 definition:
   using: 'node'
