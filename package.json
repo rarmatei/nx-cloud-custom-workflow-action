@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-main": "npx esbuild ./node-src/main.ts --bundle --platform=node --target=node20 --outfile=dist/main.js",
-    "build-post": "npx esbuild ./node-src/post.ts --bundle --platform=node --target=node20 --outfile=dist/post.js"
+    "build-post": "npx esbuild ./node-src/post.ts --bundle --platform=node --target=node20 --outfile=dist/post.js",
+    "build-node-simple": "npx esbuild ./node-src/node-simple.ts --bundle --platform=node --target=node20 --outfile=dist/node-simple.js"
   },
   "repository": {
     "type": "git",

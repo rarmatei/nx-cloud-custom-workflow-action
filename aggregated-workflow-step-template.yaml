@@ -7,6 +7,6 @@ definition:
     - name: 'You can run any steps here that you would run on an NxCloud workflow'
       script: "echo 'First step of our aggregate template'"
     - name: 'You can even use other steps in here'
-      uses: "rarmatei/nx-cloud-custom-workflow-action/main/node-workflow-step-template.yaml"
+      uses: "rarmatei/nx-cloud-custom-workflow-action/main/simple-node-step.yaml"
     - name: 'Same as the Node template you can access inputs as env vars'
       script: "echo \"Example of accessing inputs in aggregate templates, baseSha:>>$BASE_SHA<<\""
