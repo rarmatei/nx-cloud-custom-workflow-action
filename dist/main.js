@@ -72,7 +72,7 @@ var require_is_odd = __commonJS({
 var import_child_process = require("child_process");
 var import_is_odd = __toESM(require_is_odd());
 console.log(`Is 5 odd: ${(0, import_is_odd.default)(5)}`);
-var result = (0, import_child_process.execSync)(`We can even execute bash commands in here!`).toString();
+var result = (0, import_child_process.execSync)(`echo "We can even execute bash commands in here!"`).toString();
 console.log({ result });
 console.log("You can also pass inputs and access them as env values: ");
 console.log({
