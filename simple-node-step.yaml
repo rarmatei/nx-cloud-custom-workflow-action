@@ -3,4 +3,4 @@ description: "A very simple Node step demonstrating their usage in aggregate tem
 
 definition:
   using: 'node'
-  main: dist/simple-node.js
+  main: dist/node-simple.js
