@@ -4,9 +4,9 @@ description: "Example of an aggregated workflow step template"
 definition:
   using: 'aggregated'
   steps:
-    - name: 'Aggregated step 1'
-      script: "echo 'Echo step 1 aggregated'"
-    - name: 'Example of aggregated template using another workflow step'
+    - name: 'You can run any steps here that you would run on an NxCloud workflow'
+      script: "echo 'First step of our aggregate template'"
+    - name: 'You can even use other steps in here'
       uses: "rarmatei/nx-cloud-custom-workflow-action/main/node-workflow-step-template.yaml"
-    - name: 'Aggregated step 3'
-      script: "echo \"example of aggregated step with logging an arg >>$ARG_2<<\""
+    - name: 'Same as the Node template you can access inputs as env vars'
+      script: "echo \"Example of accessing inputs in aggregate templates, baseSha:>>$BASE_SHA<<\""
