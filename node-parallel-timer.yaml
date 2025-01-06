@@ -1,0 +1,7 @@
+name: "NxCloud Simple Node Example"
+description: "A very simple Node step demonstrating their usage in aggregate templates"
+
+definition:
+  using: 'node'
+  main: node-parallel-timer/main.js
+  post: node-parallel-timer/post.js
