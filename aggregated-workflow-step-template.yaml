@@ -4,9 +4,14 @@ description: "Example of an aggregated workflow step template"
 definition:
   using: 'aggregated'
   steps:
-    - name: 'You can run any steps here that you would run on an NxCloud workflow'
-      script: "echo 'First step of our aggregate template'"
-    - name: 'You can even use other steps in here'
-      uses: "rarmatei/nx-cloud-custom-workflow-action/main/simple-node-step.yaml"
-    - name: 'Same as the Node template you can access inputs as env vars'
-      script: "echo \"Example of accessing inputs in aggregate templates, baseSha:>>$BASE_SHA<<\""
+    - name: print time aggregate serial 1
+      script: for i in {1..10}; do date +"%H:%M:%S"; sleep 1; done
+    - groupName: 'Run in parallel'
+      parallel: true
+      steps:
+        - name: print time aggregate parallel
+          script: for i in {1..10}; do date +"%H:%M:%S"; sleep 1; done
+        - name: test post action aggregate parallel 1
+          uses: 'rarmatei/nx-cloud-custom-workflow-action/main/node-parallel-timer.yaml'
+        - name: test post action aggregate parallel 2
+          uses: 'rarmatei/nx-cloud-custom-workflow-action/main/node-parallel-timer.yaml'
