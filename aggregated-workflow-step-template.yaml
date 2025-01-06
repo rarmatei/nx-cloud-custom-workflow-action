@@ -6,6 +6,10 @@ definition:
   steps:
     - name: print time aggregate serial 1
       script: for i in {1..10}; do date +"%H:%M:%S"; sleep 1; done
+    - name: test post action aggregate parallel node 1
+      uses: 'rarmatei/nx-cloud-custom-workflow-action/main/node-parallel-timer.yaml'
+    - name: test post action aggregate parallel node 2
+      uses: 'rarmatei/nx-cloud-custom-workflow-action/main/node-parallel-timer.yaml'
     - groupName: 'Run in parallel'
       parallel: true
       steps:
